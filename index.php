@@ -1,11 +1,11 @@
 <?php
-/**
+ /**
  * User: Nick
  * Date: 10/17/2014
  * Time: 11:33 PM
  */
 
-php?>
+?>
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -18,6 +18,25 @@ php?>
 
 <link href="assets/css/project.css" type="text/css" rel="stylesheet" />
 <body>
+
+<div id="head">
+
+    <h1>Welcome.</h1>
+
+</div>
+
+<div id="login">
+
+    <form action="validate.php" method="post">
+
+        <input type="text" name="uName"/>
+        <input type="password" name="pass"/>
+
+        <input type="submit" name="Submit" value="Submit"/>
+
+    </form>
+
+</div>
 
 </body>
 </html>
