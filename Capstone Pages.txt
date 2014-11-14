@@ -1,0 +1,45 @@
+Web Capstone
+
+Pages
+	Index
+	AddPost
+	EditPost
+	Login
+
+
+Storage
+	Database for posts
+	Database for login information
+
+
+functionality
+
+	Class for Database connection
+	Class for Database queries
+	Class for adding Posts
+	Class for editing Posts
+	Class for getting the posts
+
+Classes
+
+	Class Posts
+	Class Connect
+	Class InsertPosts
+	Class EditPosts
+
+
+
+
+
+
+
+
+1:  Main page to display information and posts
+
+2:  from main page to a login page
+
+3:  Login to A control panel page for editing posts and adding new ones.
+
+4:	A add new posts page
+
+5:	Edit Posts Page
