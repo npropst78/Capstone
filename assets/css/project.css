@@ -1,1 +1,33 @@
 @import url(http://fonts.googleapis.com/css?family=Cinzel+Decorative);
+body {
+  height: 100%;
+  width: 100%;
+  background: #EFEFEF; }
+
+#login, #wrap {
+  font-family: "Times New Roman", Serif;
+  font-size: 1em; }
+
+#login {
+  text-align: center;
+  margin-top: 5px;
+  margin-top: 5px; }
+  #login a {
+    text-decoration: none;
+    color: #000; }
+    #login a:hover {
+      color: #1e09ff; }
+
+#head {
+  font-family: "Cinzel Decorative", cursive;
+  font-size: 2.2em;
+  text-align: center;
+  padding: 10px; }
+
+#wrap {
+  height: 900px;
+  width: 1000px;
+  margin: 0 auto;
+  background: darkseagreen; }
+
+/*# sourceMappingURL=project.css.map */

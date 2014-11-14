@@ -18,9 +18,31 @@
 <link rel="stylesheet" href="assets/css/resetCss.css" type="text/css"/>
 
 <body>
+<div id="login">
 
+<span>
 
+    <head><a href="Login.php">Click here to Login</a></head>
 
+</span>
+
+</div>
+
+<div id="head">
+
+    <h2>Welcome to my Website!</h2>
+
+</div>
+
+<div id="wrap">
+
+    <div class="posts">
+
+        <!-- Placeholder for the posts inserted by the php yet to be added. -->
+
+    </div>
+
+</div>
 
 
 </body>
