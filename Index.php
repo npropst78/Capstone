@@ -1,12 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Nick
- * Date: 11/14/2014
- * Time: 3:01 AM
- */
-
-?>
+<?php require_once "lib/GetPosts.php"; ?>
 
 <!doctype html>
 <html lang="en">
@@ -36,14 +28,20 @@
 
 <div id="wrap">
 
-    <div class="posts">
+    <div id="posts">
 
         <!-- Placeholder for the posts inserted by the php yet to be added. -->
+        <?php
+
+            $post = new GetPosts();
+
+            echo $post->DefaultPost();
+
+        ?>
 
     </div>
 
 </div>
-
 
 </body>
 </html>

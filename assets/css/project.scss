@@ -38,11 +38,41 @@ body {
 }
 
 #wrap {
-  height: 900px;
-  width: 1000px;
+  width: 800px;
   margin: 0 auto;
-  background: darkseagreen;
+  background: #f0ffff;
 }
 
+#posts {
+  width: 700px;
+  margin: 0 auto;
 
+  section {
+    height: auto;
+    margin-bottom: 33px;
+  }
 
+  p.title {
+    font-family: $mainFont;
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  p.content {
+    font-family: $mainFont;
+    font-size: 1.2em;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+
+  p.info{
+    font-family: $mainFont;
+    font-size: 1.1em;
+    padding-top: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    text-align: right;
+  }
+}

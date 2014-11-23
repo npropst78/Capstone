@@ -6,6 +6,11 @@
  * Time: 3:00 AM
  */
 
+
+include_once "connect.php";
+
 class Posts {
+
+
 
 } 
