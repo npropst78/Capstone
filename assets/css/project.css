@@ -27,7 +27,8 @@ body {
 #wrap {
   width: 800px;
   margin: 0 auto;
-  background: #f0ffff; }
+  background: #f0ffff;
+  position: relative; }
 
 #posts {
   width: 700px;
@@ -48,10 +49,42 @@ body {
   #posts p.info {
     font-family: "Times New Roman", Serif;
     font-size: 1.1em;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding: 5px 5px 5px 0;
     width: 100%;
     text-align: right; }
+
+/* This section is used for the Login Page to style the table and login. */
+#LoginForm {
+  height: 400px;
+  width: 800px;
+  margin: 0 auto; }
+  #LoginForm section {
+    position: relative;
+    margin-left: 50%;
+    top: 100px;
+    left: -175px;
+    font-size: 1.3em; }
+    #LoginForm section p {
+      text-align: center; }
+      #LoginForm section p a {
+        text-decoration: none;
+        color: #000; }
+        #LoginForm section p a:hover {
+          text-decoration: underline;
+          color: #8a2be2; }
+  #LoginForm table {
+    height: auto;
+    width: 325px; }
+    #LoginForm table td {
+      padding-top: 15px; }
+      #LoginForm table td input[type=text], #LoginForm table td input[type=password] {
+        border: 1px solid #000000;
+        padding: 10px;
+        background: #EFEFEF;
+        border-radius: 20px; }
+      #LoginForm table td input[type=submit] {
+        border-radius: 10px;
+        box-shadow: 3px;
+        background: #EFEFEF; }
 
 /*# sourceMappingURL=project.css.map */

@@ -1,0 +1,2 @@
+DENY FROM ALL
+Allow from 127.0.0.1
