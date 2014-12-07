@@ -17,19 +17,31 @@ require_once "lib/Posts.php";
     <title>Document</title>
 </head>
 
-<link rel="stylesheet" href="assets/css/backend.css"/>
+<link rel="stylesheet" href="assets/css/project.css"/>
 <link rel="stylesheet" href="assets/css/resetCss.css"/>
 
 <body>
 
-<form action="EditPost.php">
-    <?php
-        $selections = new Posts();
+<div id="head">
 
-        echo $selections->EditPosts();
-    ?>
+    <h2>Edit Posts.</h2>
 
-</form>
+</div>
+
+<div id="wrap">
+
+    <div id="posts">
+
+        <form action="status.php" method="post">
+            <?php
+                $selections = new Posts();
+
+                echo $selections->EditPosts();
+            ?>
+
+        </form>
+
+    </div>
 
 
 </body>

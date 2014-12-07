@@ -24,6 +24,7 @@ class Posts {
             while($row = $query->fetch_assoc()) {
 
                 if($clicked == $row['id']){
+                    echo "<input type='hidden' name='id' value='" . $row['id'] . " ' />";
                     echo "<table>";
                     echo "<tr><td>Title: </td><td><input type='text' name='title' value='" . $row['Title'] . "'/></td></tr>";
                     echo "<tr><td>Author:</td><td><input type='text' name='author' value='" . $row['Author'] . "'/></td></tr>";
@@ -42,7 +43,37 @@ class Posts {
     function InsertEdit() {
 
 
+        $id = $_POST['id'];
+
+        $connect = new connect();
+        $data = $connect->con();
+
+        $content = mysqli_real_escape_string($data ,$_POST['content']);
+        $title = mysqli_real_escape_string($data ,$_POST['title']);
+        $author = mysqli_real_escape_string($data ,$_POST['author']);
+
+
+        if (!empty($title) && !empty($content) && !empty($author)){
+
+            $data->query("UPDATE capstone_posts.posts SET Title = '$title', Content = '$content', Author = '$author' WHERE id = '$id'");
+            echo mysqli_error($data);
+            echo "Update Successful. You will be redirected in five seconds.";
+            header("Refresh: 5; Gateway.php");
+
+        } else {
+            echo "<p>Query Failed. You will be redirected in five seconds.</p>";
+            header("Refresh: 5; Gateway.php");
+        }
 
     }
+
+
+    function AddPost() {
+
+        //functionality for the addition of posts.
+
+    }
+
+
 
 } 

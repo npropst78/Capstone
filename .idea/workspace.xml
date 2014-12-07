@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48e591a1-a91a-49b7-b557-da9beea0eab0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Gateway.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Register.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RegisterValidate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/Validate.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Validation.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/backend.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/register.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/status.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AddPost.php" afterPath="$PROJECT_DIR$/AddPost.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EditPost.php" afterPath="$PROJECT_DIR$/EditPost.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gateway.php" afterPath="$PROJECT_DIR$/Gateway.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/GetPosts.php" afterPath="$PROJECT_DIR$/lib/GetPosts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Login.php" afterPath="$PROJECT_DIR$/Login.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Posts.php" afterPath="$PROJECT_DIR$/lib/Posts.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/project.css.map" afterPath="$PROJECT_DIR$/assets/css/project.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/project.css" afterPath="$PROJECT_DIR$/assets/css/project.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/project.scss" afterPath="$PROJECT_DIR$/assets/css/project.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Capstone.iws" />
@@ -87,13 +76,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="EditPost.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EditPost.php">
+      <file leaf-file-name="status.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/status.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="912">
-              <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.5784852" vertical-offset="0" max-vertical-offset="969">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
-                <element signature="e#6#88#0#PHP" expanded="true" />
+                <element signature="e#6#87#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,10 +91,20 @@
       <file leaf-file-name="Gateway.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gateway.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.384615" vertical-offset="108" max-vertical-offset="1020">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="-21.961538" vertical-offset="109" max-vertical-offset="1020">
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddPost.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AddPost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="884">
+              <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#6#88#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -114,11 +113,13 @@
       <file leaf-file-name="Posts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/Posts.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="816">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="-32.423077" vertical-offset="296" max-vertical-offset="1343">
+              <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
               <folding>
-                <marker date="1417006779135" expanded="true" signature="301:366" placeholder="SELECT id, T..." />
-                <marker date="1417006779135" expanded="true" signature="1026:1027" placeholder="..." />
+                <marker date="1417956545820" expanded="true" signature="301:366" placeholder="SELECT id, T..." />
+                <marker date="1417956545820" expanded="true" signature="589:654" placeholder="..." />
+                <marker date="1417956545820" expanded="true" signature="1116:1117" placeholder="..." />
+                <marker date="1417956545820" expanded="true" signature="1618:1725" placeholder="UPDATE capst..." />
               </folding>
             </state>
           </provider>
@@ -147,10 +148,13 @@
         <option value="$PROJECT_DIR$/RegisterValidate.php" />
         <option value="$PROJECT_DIR$/assets/css/project.scss" />
         <option value="$PROJECT_DIR$/lib/Validate.php" />
-        <option value="$PROJECT_DIR$/Gateway.php" />
         <option value="$PROJECT_DIR$/lib/Register.php" />
         <option value="$PROJECT_DIR$/lib/GetPosts.php" />
+        <option value="$PROJECT_DIR$/Gateway.php" />
+        <option value="dbtable:/3edbe213/83dc2e0f-c6d4-4420-913b-7c20c41cff05/capstone_posts..posts" />
+        <option value="$PROJECT_DIR$/status.php" />
         <option value="$PROJECT_DIR$/EditPost.php" />
+        <option value="$PROJECT_DIR$/AddPost.php" />
         <option value="$PROJECT_DIR$/lib/Posts.php" />
       </list>
     </option>
@@ -188,6 +192,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -298,7 +303,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -313,6 +317,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="database.results.filters.show" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="Console.TableResult.DefaultCopyAction" value="Comma-separated Values (CSV)" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -423,9 +428,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17590618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13166311" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13539445" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39958593" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3284974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39896372" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -484,20 +489,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lib/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="459">
-          <caret line="26" column="2" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/GetPosts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="612">
@@ -704,27 +695,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Capstone Pages.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="907">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21748401" vertical-offset="0" max-vertical-offset="4301">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31688598" vertical-offset="0" max-vertical-offset="912">
-          <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -756,9 +730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.55921054" vertical-offset="0" max-vertical-offset="912">
           <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
-          <folding>
-            <marker date="1416999953933" expanded="true" signature="-1:-1" placeholder="SELECT usern..user_info..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.67105263" vertical-offset="0" max-vertical-offset="912">
           <caret line="36" column="41" selection-start-line="36" selection-start-column="41" selection-end-line="36" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -774,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="938">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -782,15 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.74626863" vertical-offset="694" max-vertical-offset="1632">
           <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18640351" vertical-offset="0" max-vertical-offset="912">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -798,7 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="748">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,10 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="714">
           <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <marker date="1417002055524" expanded="true" signature="-1:-1" placeholder="SELECT usern..user_info..." />
-            <marker date="1417002055524" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,6 +772,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.961538" vertical-offset="0" max-vertical-offset="935">
           <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/project.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8201754" vertical-offset="714" max-vertical-offset="2703">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Capstone Pages.txt">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48678413" vertical-offset="0" max-vertical-offset="908">
+          <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17171717" vertical-offset="0" max-vertical-offset="594">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -826,64 +805,81 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+        <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="221">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/GetPosts.php">
+    <entry file="file://$PROJECT_DIR$/Index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7352614" vertical-offset="801" max-vertical-offset="1700">
-          <caret line="90" column="84" selection-start-line="90" selection-start-column="84" selection-end-line="90" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.1492865" vertical-offset="0" max-vertical-offset="911">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EditPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54116356" vertical-offset="0" max-vertical-offset="911">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT Title..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT Title..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT Title..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="SELECT Title..posts..." />
-            <marker date="1417005688270" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/project.scss">
+    <entry file="file://$PROJECT_DIR$/lib/GetPosts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8201754" vertical-offset="714" max-vertical-offset="2703">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-0.75411636" vertical-offset="687" max-vertical-offset="1598">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1417837906503" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
+            <marker date="1417837906503" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
+            <marker date="1417837906503" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..posts..." />
+            <marker date="1417837906503" expanded="true" signature="-1:-1" placeholder="SELECT id, T..." />
+            <marker date="1417837906503" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/Posts.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.846153" vertical-offset="0" max-vertical-offset="816">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state vertical-scroll-proportion="-32.423077" vertical-offset="296" max-vertical-offset="1343">
+          <caret line="72" column="50" selection-start-line="72" selection-start-column="50" selection-end-line="72" selection-end-column="50" />
           <folding>
-            <marker date="1417006779135" expanded="true" signature="301:366" placeholder="SELECT id, T..." />
-            <marker date="1417006779135" expanded="true" signature="1026:1027" placeholder="..." />
+            <marker date="1417956545820" expanded="true" signature="301:366" placeholder="SELECT id, T..." />
+            <marker date="1417956545820" expanded="true" signature="589:654" placeholder="..." />
+            <marker date="1417956545820" expanded="true" signature="1116:1117" placeholder="..." />
+            <marker date="1417956545820" expanded="true" signature="1618:1725" placeholder="UPDATE capst..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.192308" vertical-offset="0" max-vertical-offset="884">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gateway.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.384615" vertical-offset="108" max-vertical-offset="1020">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-21.961538" vertical-offset="109" max-vertical-offset="1020">
+          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EditPost.php">
+    <entry file="file://$PROJECT_DIR$/status.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35416666" vertical-offset="0" max-vertical-offset="912">
-          <caret line="19" column="54" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.5784852" vertical-offset="0" max-vertical-offset="969">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="e#6#88#0#PHP" expanded="true" />
+            <element signature="e#6#87#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

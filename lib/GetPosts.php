@@ -18,16 +18,13 @@ class GetPosts {
         $today = date("Y-m-d");
 
 
-
         //Default Date to grab a post from if one does not Exist.
         $defaultPost = "2014-11-14";
-
 
 
         //new connection to the sql server
         $connect = new connect();
         $data = $connect->con();
-
 
 
         //Queries the server to grab information
@@ -54,10 +51,8 @@ class GetPosts {
         }
 
 
-
         //Grabs the last three posts newest first
         $earlierPosts = $data->query("SELECT * FROM capstone_posts.posts WHERE Date != '$today' ORDER BY id DESC LIMIT 3");
-
 
 
         //Loops through and outputs the posts to the page.
@@ -77,7 +72,6 @@ class GetPosts {
 
         //Sets the Default Timezone for the SQL Server
         date_default_timezone_set("America/Chicago");
-
 
 
         //new connection to the sql server

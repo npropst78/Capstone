@@ -24,7 +24,7 @@ require_once "lib/GetPosts.php";
 
 <div id="head">
 
-    <h2>You Gateway to Success!</h2>
+    <h2>Your Gateway to Success!</h2>
 
 </div>
 
