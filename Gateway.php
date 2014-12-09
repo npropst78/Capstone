@@ -7,6 +7,7 @@
  */
 
 require_once "lib/GetPosts.php";
+require_once "lib/Posts.php";
 
 ?>
 
@@ -23,6 +24,14 @@ require_once "lib/GetPosts.php";
 <link rel="stylesheet" href="assets/css/resetCss.css" type="text/css"/>
 
 <body>
+
+<div id="login">
+    <span>
+
+        <head><a href="Index.php">Click here to go Home.</a></head>
+
+    </span>
+</div>
 
 <div id="head">
 
@@ -74,8 +83,26 @@ require_once "lib/GetPosts.php";
 
     </div>
 
+    <div id="posts">
+        <p class="title">Please select a post to delete it.</p>
+
+        <form method="post" action="delete.php">
+
+            <?php
+
+                echo $getPost->DatedPosts();
+
+            ?>
+
+        <p style="padding-top: 10px; margin-left: 10px;"><input type="submit" name="submitDel" value="Submit"/></p>
+
+        </form>
+
+    </div>
 
 </div>
+
+
 
 
 

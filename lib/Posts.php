@@ -98,6 +98,29 @@ class Posts {
         }
     }
 
+    function DeletePost() {
+
+        @$id = $_POST['clicked'];
+
+        $connect = new connect();
+        $data = $connect->con();
+
+        if (isset($id)){
+
+            $data->query("DELETE FROM capstone_posts.posts WHERE id = '$id' LIMIT 1");
+            echo mysqli_error($data);
+            echo "You have deleted the entry, please wait while we redirect you.";
+            header("Refresh: 5; Gateway.php");
+
+        } else {
+
+            echo "There was an error in your input. <a href='Gateway.php'>Please click here to go back and try again.</a>";
+
+        }
+
+
+    }
+
 
 
 } 

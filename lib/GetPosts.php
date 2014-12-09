@@ -88,6 +88,7 @@ class GetPosts {
                 echo "<p class='title' style='padding-top: 10px;'><input type='radio' name='clicked' value='" . $row['id'] . "'/>" . $row['Title'] . " - " . $row['Date'] . "</p>";
 
         }
+        $data->close();
     }
 
 
