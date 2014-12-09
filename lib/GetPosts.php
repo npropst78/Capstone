@@ -10,6 +10,7 @@ require_once "connect.php";
 
 class GetPosts {
 
+    // Gets the posts from the database and displays them in index
     function DefaultPost(){
 
         //Sets the Default Timezone for the SQL Server
@@ -68,6 +69,8 @@ class GetPosts {
 
     }
 
+
+    //Gets the Posts to be edited
     function DatedPosts() {
 
         //Sets the Default Timezone for the SQL Server

@@ -11,6 +11,8 @@ include_once "connect.php";
 
 class Posts {
 
+
+    //Method for getting to Posts to edit.
     function EditPosts() {
 
         $clicked = $_POST['clicked'];
@@ -38,8 +40,7 @@ class Posts {
         $data->close();
     }
 
-
-
+    // Method for editing the Post
     function InsertEdit() {
 
 
@@ -58,20 +59,43 @@ class Posts {
             $data->query("UPDATE capstone_posts.posts SET Title = '$title', Content = '$content', Author = '$author' WHERE id = '$id'");
             echo mysqli_error($data);
             echo "Update Successful. You will be redirected in five seconds.";
+            $data->close();
             header("Refresh: 5; Gateway.php");
 
         } else {
             echo "<p>Query Failed. You will be redirected in five seconds.</p>";
+            $data->close();
             header("Refresh: 5; Gateway.php");
         }
-
     }
 
-
+    // Method for Adding a new post
     function AddPost() {
 
-        //functionality for the addition of posts.
+        date_default_timezone_set("America/Chicago");
 
+        $connect = new connect();
+        $data = $connect->con();
+
+        //functionality for the addition of posts.
+        $title = mysqli_real_escape_string($data, $_POST['title']);
+        $author =  mysqli_real_escape_string($data, $_POST['author']);
+        $content =  mysqli_real_escape_string($data, $_POST['content']);
+        $date =  mysqli_real_escape_string($data, $_POST['date']);
+
+
+        if (!empty($title) && !empty($author) && !empty($content) && !empty($date)){
+
+            $data->query("INSERT INTO capstone_posts.posts (Title, Author, Content, Date) VALUES ('$title','$author','$content','$date') ");
+            echo "Success! You will be redirected in five seconds";
+            $data->close();
+            header("Refresh: 5; Gateway.php");
+
+        } elseif (empty($title) || empty($author) || empty($content) || empty($date)){
+            echo "Sorry there was an error, you will be redirected in five seconds.";
+            $data->close();
+            header("Refresh: 5; Gateway.php");
+        }
     }
 
 

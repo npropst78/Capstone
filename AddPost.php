@@ -6,6 +6,8 @@
  * Time: 3:04 AM
  */
 
+require_once "lib/Posts.php";
+
 ?>
 
 
@@ -23,7 +25,7 @@
 
 <div id="head">
 
-    <h2>Edit Posts.</h2>
+    <h2>Adding Post...</h2>
 
 </div>
 
@@ -31,11 +33,20 @@
 
     <div id="posts">
 
+
+        <?php
+
         // Create form for new post and add the functionality that needs to be behind it.
         // Needs to add new page for the functions to be passed through, add post success or something.
         // Also need to add the link to here from the Gateway page.
         // Once that is done i can focus on styling the pages and making it look better and more presentable.
 
+
+        $addedPost = new Posts();
+
+        $addedPost->AddPost();
+
+        ?>
 
     </div>
 

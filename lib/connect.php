@@ -8,8 +8,6 @@
 
 class connect {
 
-
-
     function con(){
 
         @$mysqli = new mysqli("localhost","root","","Capstone_posts");
@@ -21,7 +19,5 @@ class connect {
 
         return $mysqli;
     }
-
-
 
 } 
