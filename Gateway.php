@@ -40,6 +40,7 @@ require_once "lib/Posts.php";
 </div>
 
 <div id="wrap">
+    <section class="spacer"></section>
 
 
     <div id="posts">

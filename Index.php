@@ -22,13 +22,15 @@
 
 <div id="head">
 
-    <h2>Welcome to my Website!</h2>
+    <h2>Welcome to my Site.</h2>
 
 </div>
 
 <div id="wrap">
+    <section class="spacer"></section>
 
     <div id="posts">
+
 
         <!-- Placeholder for the posts inserted by the php yet to be added. -->
         <?php
@@ -41,7 +43,13 @@
 
     </div>
 
+    <div id="foot">
+        <p>Developed by Nick Propst - Rasmussen College - <a href="register.php">Click here to register.</a></p>
+    </div>
+
 </div>
+
+
 
 </body>
 </html>

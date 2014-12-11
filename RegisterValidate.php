@@ -29,6 +29,7 @@ require_once "lib/Register.php";
 </div>
 
 <div id="wrap">
+    <section class="spacer"></section>
 
     <div id="posts" style="text-align: center;">
         <?php

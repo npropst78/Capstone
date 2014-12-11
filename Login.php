@@ -26,6 +26,7 @@
 </div>
 
 <div id="wrap">
+    <section class="spacer"></section>
 
     <div id="LoginForm">
 
