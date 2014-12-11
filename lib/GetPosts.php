@@ -85,7 +85,7 @@ class GetPosts {
 
         while($row = $query->fetch_assoc()) {
 
-                echo "<p class='title' style='padding-top: 10px;'><input type='radio' name='clicked' value='" . $row['id'] . "'/>" . $row['Title'] . " - " . $row['Date'] . "</p>";
+                echo "<p class='content' style='padding-top: 10px;'><input type='radio' name='clicked' value='" . $row['id'] . "'/>" . $row['Title'] . " - " . $row['Date'] . "</p>";
 
         }
         $data->close();

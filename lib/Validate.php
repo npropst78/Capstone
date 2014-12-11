@@ -12,8 +12,8 @@ class Validate {
 
     function validation() {
 
-        $username = strtolower($_POST['username']);
-        $password = $_POST['password'];
+        @$username = strtolower($_POST['username']);
+        @$password = $_POST['password'];
 
         $connect = new connect();
         $data = $connect->con();

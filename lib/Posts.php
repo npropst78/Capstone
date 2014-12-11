@@ -15,7 +15,7 @@ class Posts {
     //Method for getting to Posts to edit.
     function EditPosts() {
 
-        $clicked = $_POST['clicked'];
+        @$clicked = $_POST['clicked'];
 
         $connect = new connect();
         $data = $connect->con();
@@ -35,8 +35,15 @@ class Posts {
                     echo "</table>";
 
                 }
+            }
+
+            if ($clicked == "") {
+
+                    echo "Sorry you wandered into somewhere you're not supposed to be. You will be redirected.";
+                    header("Refresh: 3; Gateway.php");
 
             }
+
         $data->close();
     }
 
@@ -44,7 +51,7 @@ class Posts {
     function InsertEdit() {
 
 
-        $id = $_POST['id'];
+        @$id = $_POST['id'];
 
         $connect = new connect();
         $data = $connect->con();
@@ -78,10 +85,10 @@ class Posts {
         $data = $connect->con();
 
         //functionality for the addition of posts.
-        $title = mysqli_real_escape_string($data, $_POST['title']);
-        $author =  mysqli_real_escape_string($data, $_POST['author']);
-        $content =  mysqli_real_escape_string($data, $_POST['content']);
-        $date =  mysqli_real_escape_string($data, $_POST['date']);
+        @$title = mysqli_real_escape_string($data, $_POST['title']);
+        @$author =  mysqli_real_escape_string($data, $_POST['author']);
+        @$content =  mysqli_real_escape_string($data, $_POST['content']);
+        @$date =  mysqli_real_escape_string($data, $_POST['date']);
 
 
         if (!empty($title) && !empty($author) && !empty($content) && !empty($date)){

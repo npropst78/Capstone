@@ -30,7 +30,6 @@
 
 <div id="wrap">
 
-
     <div id="LoginForm">
 
         <!-- Placeholder for the posts inserted by the php yet to be added. -->
@@ -50,6 +49,10 @@
             </form>
             <p><a href="Login.php">Click here to go to the login page.</a></p>
         </section>
+    </div>
+
+    <div id="foot">
+        <p>Developed by Nick Propst - Rasmussen College - <a href="register.php">Click here to register.</a></p>
     </div>
 
 </div>

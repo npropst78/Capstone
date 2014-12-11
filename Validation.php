@@ -31,7 +31,6 @@ require_once "lib/Validate.php";
 
 <div id="wrap">
 
-
     <div id="posts" style="text-align: center;">
         <?php
 
@@ -41,6 +40,12 @@ require_once "lib/Validate.php";
 
         ?>
     </div>
+
+    <div id="foot">
+        <p>Developed by Nick Propst - Rasmussen College - <a href="register.php">Click here to register.</a></p>
+    </div>
+
 </div>
+
 </body>
 </html>

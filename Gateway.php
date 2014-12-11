@@ -103,6 +103,10 @@ require_once "lib/Posts.php";
 
     </div>
 
+    <div id="foot">
+        <p>Developed by Nick Propst - Rasmussen College - <a href="register.php">Click here to register.</a></p>
+    </div>
+
 </div>
 
 
