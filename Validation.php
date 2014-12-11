@@ -27,8 +27,10 @@ require_once "lib/Validate.php";
 
 </div>
 
+<section class="spacer"></section>
+
 <div id="wrap">
-    <section class="spacer"></section>
+
 
     <div id="posts" style="text-align: center;">
         <?php

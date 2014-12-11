@@ -14,7 +14,9 @@ body {
   margin-top: 5px;
   margin-top: 5px;
   height: auto;
-  width: 100%; }
+  width: 100%;
+  position: relative;
+  z-index: 1; }
   #login a {
     text-decoration: none;
     color: #0d131a; }
@@ -30,21 +32,28 @@ body {
   text-align: center;
   padding: 10px;
   margin: 20px auto;
-  z-index: 1; }
+  z-index: 2; }
   #head h2 {
     margin-top: 88px; }
+
+.spacer {
+  height: 296px;
+  width: 800px;
+  background: #ecf0f1;
+  position: absolute;
+  margin-left: -400px;
+  left: 50%;
+  top: 0;
+  z-index: -1; }
 
 #wrap {
   width: 800px;
   height: auto;
-  margin: -281px auto;
+  margin: 0 auto;
   background: #ecf0f1;
   position: relative;
   color: #000000;
-  z-index: -1; }
-  #wrap .spacer {
-    height: 296px;
-    width: auto; }
+  z-index: 1; }
 
 #posts {
   width: 700px;

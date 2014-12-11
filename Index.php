@@ -26,8 +26,9 @@
 
 </div>
 
+<section class="spacer"></section>
+
 <div id="wrap">
-    <section class="spacer"></section>
 
     <div id="posts">
 

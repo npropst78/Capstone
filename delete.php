@@ -29,8 +29,9 @@ require_once "lib/Posts.php";
 
 </div>
 
+<section class="spacer"></section>
+
 <div id="wrap">
-    <section class="spacer"></section>
 
     <div id="posts">
 
