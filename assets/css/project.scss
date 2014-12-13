@@ -76,6 +76,14 @@ body {
   margin: 0 auto;
   padding-bottom: 20px;
 
+  a {
+    text-decoration: none;
+    color: #0d131a;
+    &:hover {
+      color: #1d3586;
+    }
+  }
+
   section {
     height: auto;
     margin-bottom: 33px;
@@ -121,6 +129,10 @@ body {
       float: right;
     }
   }
+}
+
+.hide {
+  display: none;
 }
 
 /* This section is used for the Login Page to style the table and login. */

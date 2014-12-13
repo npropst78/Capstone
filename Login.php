@@ -1,6 +1,5 @@
 <?php
 /**
- * Created by PhpStorm.
  * User: Nick
  * Date: 11/14/2014
  * Time: 3:05 AM
@@ -33,7 +32,7 @@
 
         <!-- Placeholder for the posts inserted by the php yet to be added. -->
         <section>
-        <form action="Validation.php" method="post">
+        <form action="Validation.php" method="post" name="login" onsubmit="return validate();">
             <table>
                 <tr>
                     <td>Username:</td><td><input type="text" size="20" name="username"/></td>
@@ -58,7 +57,7 @@
 </div>
 
 
-
+<script src="assets/scripts/js/validate.js" type="text/javascript"></script>
 
 
 </body>

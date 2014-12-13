@@ -59,6 +59,11 @@ body {
   width: 700px;
   margin: 0 auto;
   padding-bottom: 20px; }
+  #posts a {
+    text-decoration: none;
+    color: #0d131a; }
+    #posts a:hover {
+      color: #1d3586; }
   #posts section {
     height: auto;
     margin-bottom: 33px; }
@@ -88,6 +93,9 @@ body {
     padding-bottom: 5px; }
   #posts table td input[type=submit] {
     float: right; }
+
+.hide {
+  display: none; }
 
 /* This section is used for the Login Page to style the table and login. */
 #LoginForm {

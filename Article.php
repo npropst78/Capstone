@@ -1,20 +1,22 @@
 <?php
 /**
  * User: Nick
- * Date: 11/14/2014
- * Time: 3:05 AM
+ * Date: 12/11/2014
+ * Time: 9:33 PM
  */
 
 require_once "lib/GetPosts.php";
 
 ?>
 
+
 <!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome</title>
+    <title></title>
 </head>
+
 <link rel="stylesheet" href="assets/css/project.css" type="text/css"/>
 <link rel="stylesheet" href="assets/css/resetCss.css" type="text/css"/>
 
@@ -23,7 +25,7 @@ require_once "lib/GetPosts.php";
 
 <span>
 
-    <head><a href="Login.php">Click here to Login</a></head>
+    <head><a href="Index.php">Click to go back Home.</a></head>
 
 </span>
 
@@ -31,7 +33,7 @@ require_once "lib/GetPosts.php";
 
 <div id="head">
 
-    <h2 class="hide">Welcome to my Site.</h2>
+    <h2>Welcome to my Site.</h2>
 
 </div>
 
@@ -41,13 +43,12 @@ require_once "lib/GetPosts.php";
 
     <div id="posts">
 
-
         <!-- Placeholder for the posts inserted by the php yet to be added. -->
         <?php
 
-            $post = new GetPosts();
+        $single = new GetPosts();
 
-            echo $post->DefaultPost();
+        $single->SinglePost();
 
         ?>
 
@@ -58,9 +59,6 @@ require_once "lib/GetPosts.php";
     </div>
 
 </div>
-
-<script src="assets/scripts/JQuery/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script src="assets/scripts/js/hidden.js" type="text/javascript"></script>
 
 </body>
 </html>

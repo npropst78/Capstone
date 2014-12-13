@@ -1,6 +1,5 @@
 <?php
 /**
- * Created by PhpStorm.
  * User: Nick
  * Date: 11/26/2014
  * Time: 5:05 AM
@@ -49,7 +48,7 @@ require_once "lib/Posts.php";
 
         <p class="title">Add a new Post here!</p>
 
-        <form method="post" action="AddPost.php">
+        <form method="post" action="AddPost.php" name="add" onsubmit="return check()">
 
             <table>
                 <tr><td style="padding-top: 10px;">Title.</td></tr>
@@ -72,7 +71,7 @@ require_once "lib/Posts.php";
     <div id="posts">
         <p class="title">Please select a post to edit.</p>
 
-        <form action="EditPost.php" method="post">
+        <form action="EditPost.php" method="post" name="insert" onsubmit="return insert();">
 
             <?php
                 $getPost = new GetPosts();
@@ -89,7 +88,7 @@ require_once "lib/Posts.php";
     <div id="posts">
         <p class="title">Please select a post to delete it.</p>
 
-        <form method="post" action="delete.php">
+        <form method="post" action="delete.php" name="delete">
 
             <?php
 
@@ -109,9 +108,6 @@ require_once "lib/Posts.php";
 
 </div>
 
-
-
-
-
+<script type="text/javascript" src="assets/scripts/js/precheck.js"></script>
 </body>
 </html>

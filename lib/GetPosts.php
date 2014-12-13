@@ -20,7 +20,7 @@ class GetPosts {
 
 
         //Default Date to grab a post from if one does not Exist.
-        $defaultPost = "2014-11-14";
+        $defaultPost = date("2014-12-1");
 
 
         //new connection to the sql server
@@ -40,30 +40,31 @@ class GetPosts {
             $query = $data->query("SELECT * FROM capstone_posts.posts WHERE DATE = '$defaultPost'");
             @$posts = $query->fetch_assoc();
 
-            echo("<section> <p class='title'>" . $posts['Title'] . "</p>");
+            echo("<section class='hide'> <p class='title'><a href='Article.php?id=" . $posts['id'] . "'>" . $posts['Title'] . "</a></p>");
             echo("<p class='content'>" . $posts['Content'] . "</p>");
             echo("<p class='info'>" . $posts['Author'] . " - " . $posts['Date']. "</p> </section>");
 
+
         } else {
 
-            echo("<section> <p class='title'>" . $posts['Title'] . "</p>");
+            echo("<section class='hide'> <p class='title'><a href='Article.php?id=" . $posts['id'] . "'>" . $posts['Title'] . "</a></p>");
             echo("<p class='content'>" . $posts['Content'] . "</p>");
             echo("<p class='info'>" . $posts['Author'] . " - " . $posts['Date']. "</p> </section>");
         }
 
 
         //Grabs the last three posts newest first
-        $earlierPosts = $data->query("SELECT * FROM capstone_posts.posts WHERE Date != '$today' ORDER BY id DESC LIMIT 3");
+        $earlierPosts = $data->query("SELECT * FROM capstone_posts.posts WHERE Date != '$today' AND Date !='$defaultPost' ORDER BY id DESC LIMIT 3");
 
 
         //Loops through and outputs the posts to the page.
-        while($row = $earlierPosts->fetch_assoc()){
 
-            echo "<section> <p class='title'>" . $row['Title'] . "</p>";
-            echo "<p class='content'>" . $row['Content'] . "</p>";
-            echo "<p class='info'>" . $row['Author'] . " - " . $row['Date'] ."</p> </section>";
+            while($row = $earlierPosts->fetch_assoc()){
 
-        }
+                echo "<section class='hide'> <p class='title'><a href='Article.php?id=" . $row['id'] . "'>" . $row['Title'] . "</a></p>";
+                echo "<p class='content'>" . $row['Content'] . "</p>";
+                echo "<p class='info'>" . $row['Author'] . " - " . $row['Date'] ."</p> </section>";
+            }
 
         $data->close();
 
@@ -75,6 +76,8 @@ class GetPosts {
 
         //Sets the Default Timezone for the SQL Server
         date_default_timezone_set("America/Chicago");
+
+        echo "Anything?";
 
 
         //new connection to the sql server
@@ -91,6 +94,33 @@ class GetPosts {
         $data->close();
     }
 
+
+    function SinglePost() {
+
+        @$id = $_GET['id'];
+
+        $connect = new connect();
+        $data = $connect->con();
+
+        $query = $data->query("SELECT * FROM capstone_posts.posts WHERE id = '$id'");
+
+        @$posts = $query->fetch_assoc();
+
+        if (!empty($id)) {
+
+            echo("<section> <p class='title'>" . $posts['Title'] . "</a></p>");
+            echo("<p class='content'>" . $posts['Content'] . "</p>");
+            echo("<p class='info'>" . $posts['Author'] . " - " . $posts['Date']. "</p> </section>");
+
+        }else {
+
+            echo "<a href='Index.php'>Please click here to go home something went wrong........</a>";
+
+        }
+
+
+
+    }
 
 
 

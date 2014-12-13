@@ -28,6 +28,15 @@ Classes
 	//Class InsertPosts
 	//Class EditPosts
 
+	********************************************************************************
+
+	CHANGE GetPosts to stop a second post from showing up on the page.
+
+
+
+
+
+**************  Get some replacement functionality for forms ***********************
 
 
 
