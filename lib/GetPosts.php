@@ -29,7 +29,7 @@ class GetPosts {
 
 
         //Queries the server to grab information
-        $query = $data->query("SELECT * FROM capstone_posts.posts WHERE DATE = '$today'");
+        @$query = $data->query("SELECT * FROM capstone_posts.posts WHERE DATE = '$today'");
         @$posts = $query->fetch_assoc();
 
 
@@ -76,8 +76,6 @@ class GetPosts {
 
         //Sets the Default Timezone for the SQL Server
         date_default_timezone_set("America/Chicago");
-
-        echo "Anything?";
 
 
         //new connection to the sql server

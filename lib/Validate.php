@@ -17,9 +17,9 @@ class Validate {
         $connect = new connect();
         $data = $connect->con();
 
-        $query = $data->query("SELECT username, password FROM user_info WHERE username = '$username'");
+        @$query = $data->query("SELECT username, password FROM capstone_posts.user_info WHERE username = '$username'");
 
-        $check = $query->fetch_assoc();
+        @$check = $query->fetch_assoc();
 
         //check to see if the sent data is not empty.
         if (!empty($username) && !empty($password)){

@@ -6,6 +6,10 @@
  */
 
 require_once "lib/GetPosts.php";
+require_once "lib/createdb.php";
+
+$createDB = new CreateDB();
+$create = $createDB->DatabaseCreate();
 
 ?>
 

@@ -9,7 +9,7 @@ class connect {
 
     function con(){
 
-        @$mysqli = new mysqli("localhost","root","","Capstone_posts");
+        @$mysqli = new mysqli("localhost","root","") or die;
 
         if ($mysqli->connect_errno){
             echo "<p>Failed to connect: " . $mysqli->connect_errno . "</p>";
@@ -19,4 +19,4 @@ class connect {
         return $mysqli;
     }
 
-} 
+}

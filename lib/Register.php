@@ -18,9 +18,9 @@ class Register {
         $con = new connect();
         $data = $con->con();
 
-        $query = $data->query("SELECT username, password FROM capstone_posts.user_info WHERE username = '$username'");
+        @$query = $data->query("SELECT username, password FROM capstone_posts.user_info WHERE username = '$username'");
 
-        $check = $query->fetch_assoc();
+        @$check = $query->fetch_assoc();
 
         //checks if the username and password are not empty
         if (!empty($username) && !empty($password)) {
